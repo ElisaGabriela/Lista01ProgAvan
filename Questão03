@@ -1,0 +1,24 @@
+//Questão 03 Lista 01
+#include <stdio.h>
+int main()
+{
+    int i, j, *p, *q;
+    p = i;
+    printf("resultados01: %d\n", p);
+    q = &j;
+    printf("resultados02: %p\n", q);
+    p = &*&i;
+    printf("resultados03: %p\n", p);
+    /*i = (*&)j; ILEGAL
+    printf("resultados04: %p\n", i);
+    */
+    i = *&j;
+    printf("resultados05: %d\n", i);
+    i = *&*&j;
+    printf("resultados06: %d\n", i);
+    q = *p;
+    printf("resultados07: %d\n", q);
+    i = (*p)++ + *q; // ILEGAL
+    printf("resultados08: %d\n", i);
+
+}
