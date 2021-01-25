@@ -1,0 +1,39 @@
+// Questão 01 - lista 01
+#include <stdio.h>
+
+int main()
+{
+    printf("questao 1 lista 01 operacoes: \n");
+    int i=3, j=5;
+    int *p, *q;
+    p = &i;
+    q = &j;
+
+    // primeira operação = resultado : verdadeiro
+    if (p==&i)
+    {
+        printf("A operacao 01 tem como resultado = Verdadeiro \n" );
+    }
+    else{
+        printf("A operacao 01 tem como resultado = Falso \n" );
+    }
+
+    // segunda operação = resultado : -2
+
+    int seg_op;
+    seg_op = *p - *q;
+    printf("A operacao 02 tem como resultado = %d\n", seg_op);
+
+    // Terceira operação = resultado : 3
+
+    int terc_op;
+    terc_op = **&p;
+    printf("A operacao 03 tem como resultado = %d\n", terc_op);
+
+    //Quarta operação = resultado : 10
+
+    int quart_op;
+    quart_op = 3 - *p/(*q) + 7;
+    printf("A operacao 04 tem como resultado = %d\n", quart_op);
+
+}
