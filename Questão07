@@ -1,0 +1,28 @@
+/* Questão 07 lista 01
+Resultados obtidos:
+Expressao 01 = 6356716
+Expressao 04 = 6356864
+
+As expressões 02 e 03 são inválidas 
+*/
+#include <stdio.h>
+int main()
+{
+    int mat[4], *p, x;
+
+    p = mat + 1;
+    printf("Expressao 01 = %d\n", p);
+
+    /*
+    p = mat++;
+    printf("Expressao 02 = %d\n", p);
+
+    p = ++mat;
+    printf("Expressao 03 = %d\n", p);
+    */
+
+    x = (*mat)++;
+    printf("Expressao 04 = %d", x);
+
+    return 0;
+}
