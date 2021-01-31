@@ -1,0 +1,19 @@
+// Questão 06 lista 01
+/* Os resultados obtidos foram:
+Expressao 01 = 3
+Expressao 02 = 2
+Expressao 03 = 6356740
+Expressao 04 = 6356732
+
+A expressão que revelou o terceiro elemento foi a primeira -> *(pulo + 2) 
+*/
+#include <stdio.h>
+int main ()
+{
+    int pulo[3]={1,2,3};
+    printf("Expressao 01 = %d\n", *(pulo + 2));
+    printf("Expressao 02 = %d\n", *(pulo + 4));
+    printf("Expressao 03 = %d\n", pulo + 4);
+    printf("Expressao 04 = %d", pulo + 2);
+    return 0;
+}
