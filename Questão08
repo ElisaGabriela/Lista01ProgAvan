@@ -1,0 +1,34 @@
+/* Questão 08 lista 01
+Resultados obtidos:
+PRIMEIRO PROGRAMA: 4 9 13
+
+SEGUNDO PROGRAMA: 60FEF0 60FEF4 60FEF8
+
+CONCLUSÕES: Podemos concluir que o primeiro programa imprime
+o que está contido no vetor, enquanto o segundo programa imprime o
+endereço de memória das posições ocupadas pelo vetor.
+
+
+
+*/
+#include <stdio.h>
+int main ()
+{
+    /* PRIMEIRO PROGRAMA
+    int vet[] = {4, 9, 13};
+    int i;
+    for(i=0; i<3; i++)
+    {
+        printf("%d ", *(vet+i));
+    }
+    */
+    // SEGUNDO PROGRAMA:
+    int vet[] = {4, 9, 13};
+    int i;
+    for(i=0; i<3; i++)
+    {
+        printf("%X ", vet+i);
+    }
+    return 0;
+
+}
